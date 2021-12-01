@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas63</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            background-color: pink;
+        }
+        .container{
+            display: flex;
+        }
+        header,  article, aside, footer {
+            border: 1px solid black;
+            text-align: center;
+         }
+        header {
+            flex-grow: 1;
+            height: 70px;
+            background-color: mediumaquamarine;
+            flex-grow: 1;
+            margin-bottom: 15px;
+         }
+        article {
+            flex-grow: 3;
+            height: 500px;
+            background-color: lightcoral;
+            margin-left: 15px;
+        }
+        .gambar img{
+            width: 150px;
+            height: 100px;
+            padding-top: 300px;
+        }
+        aside {
+            flex-grow: 1;
+            background-color: rgb(41, 212, 184);
+            width: 200px;
+         }
+        footer {
+        flex-grow: 1;
+        background-color: mediumaquamarine;
+        height: 70px;
+        margin-top: 15px
+        }
+    </style>
+</head>
+<body>
+        <header>Header</header>
+        <div class="container">
+            <aside>Aside</aside>
+            <article>
+                Article
+                <div class="gambar">
+                <img src="satu.jpg" alt="inigambar">
+                <img src="dua.jpg" alt="inigambar">
+                <img src="tiga.jpg" alt="inigambar">
+            </div>
+            </article>
+        </div>
+        <footer>Fotter</footer>
+</body>
+</html>

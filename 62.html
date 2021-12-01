@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0;
+    }
+    .navbar{
+        display: flex;
+        float: left;
+        background: pink;
+        width: 40vh;
+        height: 100vh;
+    }
+    .main{
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .main1{
+        display: flex;
+        flex: 1;
+    }
+    .main1 article{
+        flex: 1;
+        order: 1;
+    }
+    .main1 .article{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-self: flex-end;
+    }
+    .main1 .article img{
+        width: 100px;
+        height: 100px;
+    }
+    .main1 aside{
+        flex: 0 0 20vw;
+    }
+    .main aside{
+        background: skyblue;
+        order: 2;
+    }
+    header, footer{
+        background: khaki;
+        height: 20vh;
+    }
+    header, footer, article, nav, aside{
+        font-size: 30px;
+        padding: 1em;
+    }
+</style>
+<body>
+    <nav class="navbar">Nav</nav>
+    <div class="main">
+        <header>Header</header>
+        <div class="main1">
+            <article class="Article">
+                <Article></Article>
+            </article>
+            <aside>aside</aside>
+        </div>
+    <footer>footer</footer>
+</div>
+    
+</body>
+</html>
